@@ -21,7 +21,7 @@ public class InterstitialActivity extends AppCompatActivity {
         mAdInterstitial = new AdInterstitial(this, "_0c5006f5a8", new AdInterstitialListener() {
             @Override
             public void onReceiveAd() {
-                // 広告のロードが成功した場合
+                // 広告情報のロードが成功した場合
                 Toast.makeText(InterstitialActivity.this, "onReceiveAd", Toast.LENGTH_SHORT).show();
             }
 
@@ -53,7 +53,7 @@ public class InterstitialActivity extends AppCompatActivity {
 
             @Override
             public void onLoadFailure(Exception e) {
-                // 広告のロードに失敗した場合
+                // 広告情報のロードに失敗した場合
                 Toast.makeText(InterstitialActivity.this, "onLoadFailure=" + e.getMessage(), Toast.LENGTH_SHORT).show();
             }
 
@@ -65,7 +65,7 @@ public class InterstitialActivity extends AppCompatActivity {
                 mAdInterstitial.load();
             }
         });
-        // 広告のロード
+        // 広告情報のロード
         mAdInterstitial.load();
 
         // 表示ボタンの設定

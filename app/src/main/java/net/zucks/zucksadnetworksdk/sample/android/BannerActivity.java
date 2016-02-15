@@ -25,7 +25,7 @@ public class BannerActivity extends AppCompatActivity {
         AdBanner adBanner = new AdBanner(this, "_833b45aa06", new AdBannerListener() {
             @Override
             public void onReceiveAd(AdBanner adBanner) {
-                // 広告の取得が完了した場合
+                // 広告のロードが成功した場合
                 Toast.makeText(BannerActivity.this, "onReceiveAd", Toast.LENGTH_SHORT).show();
             }
 
@@ -37,7 +37,7 @@ public class BannerActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(AdBanner adBanner, Exception e) {
-                // 広告の取得に失敗した場合
+                // 広告のロードに失敗した場合
                 Toast.makeText(BannerActivity.this, "onFailure", Toast.LENGTH_SHORT).show();
             }
         });

@@ -2,6 +2,8 @@ package net.zucks.zucksadnetworksdk.sample.android;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import net.zucks.listener.AdInterstitialListener;
@@ -21,8 +23,6 @@ public class InterstitialActivity extends AppCompatActivity {
             public void onReceiveAd() {
                 // 広告の取得が完了した場合
                 Toast.makeText(InterstitialActivity.this, "onReceiveAd", Toast.LENGTH_SHORT).show();
-                // 広告取得後すぐに表示
-                mAdInterstitial.show();
             }
 
             @Override
@@ -47,6 +47,8 @@ public class InterstitialActivity extends AppCompatActivity {
             public void onCloseAd() {
                 // 広告がクローズされた場合
                 Toast.makeText(InterstitialActivity.this, "onCloseAd", Toast.LENGTH_SHORT).show();
+                // 再ロード
+                mAdInterstitial.load();
             }
 
             @Override
@@ -59,10 +61,21 @@ public class InterstitialActivity extends AppCompatActivity {
             public void onShowFailure(Exception e) {
                 // 広告の表示に失敗した場合
                 Toast.makeText(InterstitialActivity.this, "onShowFailure=" + e.getMessage(), Toast.LENGTH_SHORT).show();
-
+                // 再ロード
+                mAdInterstitial.load();
             }
         });
         // 広告の取得
         mAdInterstitial.load();
+
+        // 表示ボタンの設定
+        Button button = (Button) findViewById(R.id.button_show);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 広告の表示
+                mAdInterstitial.show();
+            }
+        });
     }
 }

@@ -18,6 +18,7 @@ public class InterstitialActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interstitial);
         // 初期化およびコールバックの設定
+        // 管理画面から取得したFrame IDを設定してください
         mAdInterstitial = new AdInterstitial(this, "_0c5006f5a8", new AdInterstitialListener() {
             @Override
             public void onReceiveAd() {

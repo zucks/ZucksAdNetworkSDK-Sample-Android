@@ -17,7 +17,19 @@
         android:id="@+id/button_banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Banner Sample"/>
+        android:text="Banner Sample Layout"/>
+
+    <Button
+        android:id="@+id/button_banner_nocallback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner Sample No Callback"/>
+
+    <Button
+        android:id="@+id/button_banner_callback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Banner Sample Callback"/>
 
     <Button
         android:id="@+id/button_interstitial"

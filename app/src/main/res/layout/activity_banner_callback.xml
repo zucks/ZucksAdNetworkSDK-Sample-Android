@@ -9,15 +9,6 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="net.zucks.zucksadnetworksdk.sample.android.BannerActivity">
-
-    <!-- layout.xmlで記述する場合 -->
-    <!-- ページ上部中央に寄せて配置する -->
-    <net.zucks.view.AdBanner
-        frame_id="_833b45aa06"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"/>
+    tools:context="net.zucks.zucksadnetworksdk.sample.android.BannerCallbackActivity">
 
 </RelativeLayout>

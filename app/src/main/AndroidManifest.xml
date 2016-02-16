@@ -27,6 +27,10 @@
         </activity>
         <activity android:name=".InterstitialActivity">
         </activity>
+        <activity android:name=".BannerNoCallbackActivity">
+        </activity>
+        <activity android:name=".BannerCallbackActivity">
+        </activity>
     </application>
 
 </manifest>

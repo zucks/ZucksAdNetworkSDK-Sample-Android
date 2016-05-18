@@ -25,5 +25,13 @@ public class BannerNoCallbackActivity extends AppCompatActivity {
 
         layout.addView(banner);
         banner.load();
+
+        // サイズアジャスト
+        AdBanner sizeAdjustBanner = new AdBanner(this, "_833b45aa06", true);
+        RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) sizeAdjustBanner.getLayoutParams();
+        params2.addRule(RelativeLayout.CENTER_VERTICAL);
+        params2.addRule(RelativeLayout.CENTER_IN_PARENT);
+        layout.addView(sizeAdjustBanner);
+        sizeAdjustBanner.load();
     }
 }

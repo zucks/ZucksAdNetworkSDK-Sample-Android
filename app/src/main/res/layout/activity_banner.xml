@@ -11,19 +11,33 @@
 
     <!-- layout.xmlで記述する場合 -->
     <!-- ページ上部中央に寄せて配置する -->
+    <TextView
+        android:id="@+id/text_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="通常バナー"/>
+
     <net.zucks.view.AdBanner
         frame_id="_833b45aa06"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/text_normal"
         android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/text_size_adjust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="サイズアジャストバナー"/>
 
     <net.zucks.view.AdBanner
         frame_id="_833b45aa06"
         size_adjust="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/text_size_adjust"
         android:layout_centerInParent="true"/>
 
 </RelativeLayout>

@@ -25,6 +25,7 @@ public class BannerNoCallbackActivity extends AppCompatActivity {
         normal.setText("通常バナー");
         layout.addView(normal);
 
+        // 通常バナー 本体
         // コードで記述する場合（コールバックなし）
         // 管理画面から取得したFrame IDを設定してください
         AdBanner banner = new AdBanner(this, "_833b45aa06");
@@ -38,7 +39,6 @@ public class BannerNoCallbackActivity extends AppCompatActivity {
         banner.load();
 
         // サイズアジャスト
-        // サイズアジャスト
         // サイズアジャスト テキスト
         TextView sizeAdjust = new TextView(this);
         sizeAdjust.setId(R.id.text_size_adjust);
@@ -48,10 +48,16 @@ public class BannerNoCallbackActivity extends AppCompatActivity {
         sizeAdjust.setText("サイズアジャストバナー");
         layout.addView(sizeAdjust);
 
+        // サイズアジャスト 本体
+        // コードで記述する場合（コールバックなし）
+        // 管理画面から取得したFrame IDを設定してください
         AdBanner sizeAdjustBanner = new AdBanner(this, "_833b45aa06", true);
+
+        // ページ中央に寄せて配置する
         RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) sizeAdjustBanner.getLayoutParams();
         params2.addRule(RelativeLayout.BELOW, R.id.text_size_adjust);
         params2.addRule(RelativeLayout.CENTER_IN_PARENT);
+
         layout.addView(sizeAdjustBanner);
         sizeAdjustBanner.load();
     }

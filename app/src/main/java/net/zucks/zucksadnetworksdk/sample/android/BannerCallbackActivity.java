@@ -27,7 +27,7 @@ public class BannerCallbackActivity extends AppCompatActivity {
         normal.setText("通常バナー");
         layout.addView(normal);
 
-        // バナー本体
+        // 通常バナー 本体
         // コードで記述する場合（コールバックあり）
         // 管理画面から取得したFrame IDを設定してください
         AdBanner adBanner = new AdBanner(this, "_833b45aa06", new AdBannerListener() {
@@ -68,7 +68,9 @@ public class BannerCallbackActivity extends AppCompatActivity {
         sizeAdjust.setText("サイズアジャストバナー");
         layout.addView(sizeAdjust);
 
-        // バナー本体
+        // サイズアジャスト 本体
+        // コードで記述する場合（コールバックあり）
+        // 管理画面から取得したFrame IDを設定してください
         AdBanner sizeAdjustBanner = new AdBanner(this, "_833b45aa06", new AdBannerListener() {
             @Override
             public void onReceiveAd(AdBanner adBanner) {
@@ -88,9 +90,12 @@ public class BannerCallbackActivity extends AppCompatActivity {
                 Toast.makeText(BannerCallbackActivity.this, "onFailure", Toast.LENGTH_SHORT).show();
             }
         }, true);
+
+        // ページ中央に寄せて配置する
         RelativeLayout.LayoutParams params2 = (RelativeLayout.LayoutParams) sizeAdjustBanner.getLayoutParams();
         params2.addRule(RelativeLayout.BELOW, R.id.text_size_adjust);
         params2.addRule(RelativeLayout.CENTER_IN_PARENT);
+
         layout.addView(sizeAdjustBanner);
         sizeAdjustBanner.load();
     }

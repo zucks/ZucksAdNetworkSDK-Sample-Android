@@ -48,6 +48,12 @@ public class BannerCallbackActivity extends AppCompatActivity {
                 // 広告情報のロードに失敗した場合
                 Toast.makeText(BannerCallbackActivity.this, "onFailure", Toast.LENGTH_SHORT).show();
             }
+
+            @Override
+            public void onBackApplication(AdBanner banner) {
+                // 広告タップ後アプリケーションに戻った場合
+                Toast.makeText(BannerCallbackActivity.this, "onBackApplication", Toast.LENGTH_SHORT).show();
+            }
         });
 
         // ページ上部中央に寄せて配置する
@@ -88,6 +94,12 @@ public class BannerCallbackActivity extends AppCompatActivity {
             public void onFailure(AdBanner adBanner, Exception e) {
                 // 広告情報のロードに失敗した場合
                 Toast.makeText(BannerCallbackActivity.this, "onFailure", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onBackApplication(AdBanner banner) {
+                // 広告タップ後アプリケーションに戻った場合
+                Toast.makeText(BannerCallbackActivity.this, "onBackApplication", Toast.LENGTH_SHORT).show();
             }
         }, true);
 

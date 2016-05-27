@@ -99,7 +99,7 @@ public class BannerCallbackActivity extends AppCompatActivity {
             @Override
             public void onBackApplication(AdBanner banner) {
                 // 広告タップ後アプリケーションに戻った場合
-                Toast.makeText(BannerCallbackActivity.this, "onBackApplication", Toast.LENGTH_LONG).show();
+                Toast.makeText(BannerCallbackActivity.this, "onBackApplication", Toast.LENGTH_SHORT).show();
             }
         }, true);
 

@@ -79,4 +79,14 @@ public class InterstitialActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        if (mAdInterstitial.isShowing()) {
+            mAdInterstitial.dismiss();
+            return;
+        }
+        super.onBackPressed();
+    }
+
 }

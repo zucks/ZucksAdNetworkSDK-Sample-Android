@@ -38,10 +38,16 @@
         android:text="Interstitial Sample"/>
 
     <Button
+        android:id="@+id/button_fullscreen_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fullscreen Banner Sample"/>
+
+    <Button
         android:id="@+id/button_fullscreen_banner_callback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fullscreen Banner Sample Callback"/>
+        android:text="Fullscreen Banner Callback"/>
 
     <Button
         android:id="@+id/button_fullscreen_interstitial"

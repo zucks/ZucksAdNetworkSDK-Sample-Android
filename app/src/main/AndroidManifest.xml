@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".BannerCallbackActivity">
         </activity>
+        <activity android:name=".FullscreenBannerActivity">
+        </activity>
         <activity android:name=".FullscreenBannerCallbackActivity">
         </activity>
         <activity android:name=".FullscreenInterstitialActivity">

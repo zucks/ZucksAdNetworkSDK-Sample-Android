@@ -44,5 +44,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button fullscreenBanner = (Button) findViewById(R.id.button_fullscreen_banner);
+        fullscreenBanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FullscreenBannerActivity.class));
+            }
+        });
+
+        Button fullscreenBannerCallback = (Button) findViewById(R.id.button_fullscreen_banner_callback);
+        fullscreenBannerCallback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FullscreenBannerCallbackActivity.class));
+            }
+        });
+
+        Button fullscreenInterstitialButton = (Button) findViewById(R.id.button_fullscreen_interstitial);
+        fullscreenInterstitialButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FullscreenInterstitialActivity.class));
+            }
+        });
+
     }
 }

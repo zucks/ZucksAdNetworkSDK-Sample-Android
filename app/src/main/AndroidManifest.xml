@@ -37,6 +37,8 @@
         </activity>
         <activity android:name=".FullscreenInterstitialActivity">
         </activity>
+        <activity android:name=".NativeAdActivity">
+        </activity>
     </application>
 
 </manifest>

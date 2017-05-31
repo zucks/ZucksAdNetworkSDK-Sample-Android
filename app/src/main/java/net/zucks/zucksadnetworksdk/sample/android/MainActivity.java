@@ -68,5 +68,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button nativeAdButton = (Button) findViewById(R.id.button_native_ad);
+        nativeAdButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, NativeAdActivity.class));
+            }
+        });
+
     }
 }

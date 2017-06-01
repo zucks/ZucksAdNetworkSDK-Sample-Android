@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="タイトル"/>
+
+    <ImageView
+        android:id="@+id/image_main"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/text_title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="main image"/>
+
+    <TextView
+        android:id="@+id/text_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_main"
+        android:layout_centerHorizontal="true"
+        android:text="本文"/>
+
+    <TextView
+        android:id="@+id/text_advertiser_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_body"
+        android:text="広告主名"/>
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_body"
+        android:text="製品名"/>
+
+    <Button
+        android:id="@+id/button_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/text_advertiser_name"
+        android:text="link button"/>
+
+</RelativeLayout>

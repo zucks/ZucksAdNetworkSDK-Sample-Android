@@ -28,19 +28,30 @@
         android:text="本文"/>
 
     <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/text_body"
+        android:text="製品名"/>
+
+    <TextView
         android:id="@+id/text_advertiser_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_body"
+        android:layout_alignBaseline="@+id/text_product_name"
+        android:layout_alignBottom="@+id/text_product_name"
+        android:layout_centerHorizontal="true"
         android:text="広告主名"/>
 
     <TextView
-        android:id="@+id/text_product_name"
+        android:id="@+id/text_pr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_below="@id/text_body"
-        android:text="製品名"/>
+        android:text="PR"/>
 
     <Button
         android:id="@+id/button_link"

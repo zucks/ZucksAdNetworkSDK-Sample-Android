@@ -8,8 +8,8 @@ android {
         applicationId "net.zucks.zucksadnetworksdk.sample.android"
         minSdkVersion 16
         targetSdkVersion 25
-        versionCode 13
-        versionName "1.6.0"
+        versionCode 14
+        versionName "1.6.1"
     }
     buildTypes {
         release {

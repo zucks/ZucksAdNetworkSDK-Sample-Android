@@ -36,7 +36,7 @@ public class NativeAdActivity extends AppCompatActivity {
                 ((TextView) itemView.findViewById(R.id.text_body)).setText(nativeAd.bodyText);
                 ((TextView) itemView.findViewById(R.id.text_advertiser_name)).setText(nativeAd.advertiserName);
                 ((TextView) itemView.findViewById(R.id.text_product_name)).setText(nativeAd.productName);
-                Picasso.with(NativeAdActivity.this).load(nativeAd.imageSrc).fit().centerCrop()
+                Picasso.get().load(nativeAd.imageSrc).fit().centerCrop()
                         .into((ImageView) itemView.findViewById(R.id.image_main));
                 Button linkButton = ((Button) itemView.findViewById(R.id.button_link));
                 linkButton.setText(nativeAd.linkButtonText);

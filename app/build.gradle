@@ -28,9 +28,6 @@ repositories {
 dependencies {
     implementation 'net.zucks:zucks-ad-network-sdk:4.6.1'
 
-    // Google Play Services を追加
-    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
-
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:exifinterface:28.0.0'

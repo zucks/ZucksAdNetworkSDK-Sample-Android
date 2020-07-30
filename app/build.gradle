@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'net.zucks:zucks-ad-network-sdk:4.6.1'
+    implementation 'net.zucks:zucks-ad-network-sdk:4.7.0'
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'

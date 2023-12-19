@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'net.zucks:zucks-ad-network-sdk:6.0.0'
+    implementation 'net.zucks:zucks-ad-network-sdk:6.0.1'
 
     implementation 'com.google.android.exoplayer:exoplayer-core:2.16.0'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.16.0'

@@ -6,10 +6,10 @@ android {
 
     defaultConfig {
         applicationId "net.zucks.zucksadnetworksdk.sample.android"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
-        versionCode 18
-        versionName "1.7.1"
+        versionCode 19
+        versionName "1.8.0"
     }
 
     buildTypes {
@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'net.zucks:zucks-ad-network-sdk:6.0.1'
+    implementation 'net.zucks:zucks-ad-network-sdk:6.1.0'
 
     implementation 'com.google.android.exoplayer:exoplayer-core:2.16.0'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.16.0'

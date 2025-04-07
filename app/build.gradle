@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "net.zucks.zucksadnetworksdk.sample.android"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 28
         versionCode 19
         versionName "1.8.0"
